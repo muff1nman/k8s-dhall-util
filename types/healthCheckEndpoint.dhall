@@ -1,0 +1,1 @@
+{ hostname : Text, apikey : Text }
