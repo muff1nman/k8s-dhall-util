@@ -4,6 +4,8 @@
     https://raw.githubusercontent.com/dhall-lang/dhall-kubernetes/4ad58156b7fdbbb6da0543d8b314df899feca077/typesUnion.dhall sha256:8e8db456b218b93f8241d497e54d07214b132523fe84263e6c03496c141a8b18
 , HealthCheckEndpoint =
     ./types/healthCheckEndpoint.dhall sha256:0a5fbddb1348c6aa66c39d4688e7bf72ffe185bee514b4f37439d2fa4b4ca12b
+, HealthCheckConfig =
+    ./types/healthCheckConfig.dhall sha256:e423c507a71e5c9b8f8fb27cb757f71c5be14cacf9009e17983b87bdb664fd30
 , SshKey =
     ./types/sshKey.dhall sha256:4d8f56be35b395d0e84d9c22316517054b49b58980f97ad69edc486cf9d054bb
 }
