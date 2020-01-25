@@ -1,5 +1,5 @@
 let types =
-      ../types.dhall sha256:a9d8778318985fe775afa84fd625aefaa9ece48b236d7e2c7dabe8f05ce80824
+      ../types.dhall sha256:f5ebc695abcb3b0523153141aed12519b5b77a8af79477dc5dfe315448a95e45
 
 let defaults =
       ../defaults.dhall sha256:f6d1c152b61bdb5df14850a4198e7aea9038cc3d3f7051df25759225ea87ea3d
