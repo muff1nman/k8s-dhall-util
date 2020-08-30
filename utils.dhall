@@ -5,6 +5,6 @@
 , sshKeySecret =
     ./utils/sshKeySecret.dhall sha256:d0d6e6d11be6e7fe8efb049cdd90a12f0d43254ba6a29c39fcfb0d24fad74516
 , kv =
-    ( https://raw.githubusercontent.com/dhall-lang/dhall-kubernetes/dea2c92017c8e4a9213023d9a5a1d0ad8afedb3b/Prelude.dhall sha256:771c7131fc87e13eb18f770a27c59f9418879f7e230ba2a50e46f4461f43ec69
+    ( https://raw.githubusercontent.com/dhall-lang/dhall-kubernetes/59132b47b7c796eeeca576cb7ca6b96077b56be6/1.17/Prelude.dhall sha256:10db3c919c25e9046833df897a8ffe2701dc390fa0893d958c3430524be5a43e
     ).JSON.keyText
 }
