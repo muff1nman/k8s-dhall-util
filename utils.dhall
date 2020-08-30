@@ -1,5 +1,5 @@
 { healthCheckSecret =
-    ./utils/healthCheckSecret.dhall sha256:497484c74c6fe4f5ad8631542e5a41352e919acca6f16cb694c73edf3b6fcd33
+    ./utils/healthCheckSecret.dhall sha256:327a969bf6983186a7dd207268f0e41cb223eb5190a42f6e1fd2f3742392b097
 , healthCheckConfig =
     ./utils/healthCheckConfig.dhall sha256:7bd22e6cf4462d3ed38ad905d9a12c5f7c474a157308e4fea4b2208935eda026
 , sshKeySecret =
