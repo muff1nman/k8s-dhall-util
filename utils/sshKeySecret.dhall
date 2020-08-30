@@ -5,15 +5,15 @@ let defaults =
       ../defaults.dhall sha256:f6d1c152b61bdb5df14850a4198e7aea9038cc3d3f7051df25759225ea87ea3d
 
 let sshKeySecret =
-        λ(sshKey : types.SshKey)
-      → let knownHostsData =
-              Optional/fold
-                Text
+      λ(sshKey : types.SshKey) →
+        let knownHostsData =
+              merge
+                { None = [] : List { mapKey : Text, mapValue : Text }
+                , Some =
+                    λ(x : Text) → [ { mapKey = "known_hosts", mapValue = x } ]
+                }
                 sshKey.knownHosts
-                (List { mapKey : Text, mapValue : Text })
-                (λ(x : Text) → [ { mapKey = "known_hosts", mapValue = x } ])
-                ([] : List { mapKey : Text, mapValue : Text })
-        
+
         let secret
             : types.k8s.Secret
             =   defaults.k8s.Secret
@@ -33,7 +33,7 @@ let sshKeySecret =
                       ]
                     # knownHostsData
                 }
-        
+
         in  secret
 
 in  sshKeySecret
