@@ -1,7 +1,7 @@
 { healthCheckSecret =
     ./utils/healthCheckSecret.dhall sha256:327a969bf6983186a7dd207268f0e41cb223eb5190a42f6e1fd2f3742392b097
 , healthCheckConfig =
-    ./utils/healthCheckConfig.dhall sha256:7bd22e6cf4462d3ed38ad905d9a12c5f7c474a157308e4fea4b2208935eda026
+    ./utils/healthCheckConfig.dhall sha256:f4292e193548e6e599c09c180f9447c06a3a4adfc94305fb5c7af690a7e1b097
 , sshKeySecret =
     ./utils/sshKeySecret.dhall sha256:b717b5a7bdbf43f40ee885f62d1640af2d095d647e125cd9506586a87f412fd2
 , kv =
